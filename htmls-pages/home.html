@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetlife</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/login.js"></script>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="header">
+            <div class="left-header">
+                <img src="../Media/icons/sweetlife.png" alt="sweetlife icon" srcset="" class="logo">
+            </div>
+            <div class="center-header">
+                <h3>Achieve your goals with our best sugar Momma and Blesser</h3>
+            </div>
+            <div class="right-header">
+                <img src="../Media/icons/user-3296.png" alt="" srcset="">
+                <p><span class="username2"></span></p>
+               <p><strong>Balance:</strong><span class="balance2"></span></p>
+            </div>
+
+        </div>
+        <div class="content">
+           <div class="components">
+                <div class="switch buttons"></div>
+                    <button onclick="showMoneyPopup()">Sugar Mommas</button>
+                    <button onclick="showMoneyPopup()">Blessers</button>
+                </div>
+                
+            </div>
+                
+                <div id="moneyPopup" class="popup-overlay">
+                                <div class="popup-box">
+                                    <h2>Hold On!</h2>
+                                    <p>To view Sugar Mommas/Blessers, You need to have a balance in your account.</p>
+                                    <p>We recommend a minimum balance of MK100.00 to ensure you can comment
+                                    <p>You need to deposit or top up your account before viewing.</p>
+                                    <div class="popup-buttons">
+                                    <button onclick="closePopup()">Ignore</button>
+                                    <button onclick="goToAccount()">Go to Account</button>
+                                    </div>
+                                </div>
+                            </div>
+            <div class="components">
+                <div class="comment-container" id="commentSection">
+                    
+                        <div class="available-people">
+                            
+                                <!-- Comments will be injected here -->
+                            </div>        
+                    </div>
+
+
+                    <div class="comment-section">
+                        <input type="text" placeholder="Leave a comment...">
+                        <button onclick="showMoneyPopup()">Comment
+                            
+                        </button>
+                            <div id="moneyPopup" class="popup-overlay">
+                                <div class="popup-box">
+                                    <h2>Hold On!!</h2>
+                                    <p>To comment, you need to have a balance in your account.</p>
+                                    <p>We recommend a minimum balance of MK100.00 to ensure you can comment
+                                    <p>You need to deposit or top up your account before commenting.</p>
+                                    <div class="popup-buttons">
+                                    <button onclick="closePopup()">Ignore</button>
+                                    <button onclick="goToAccount()">Go to Account</button>
+                                    </div>
+                                </div>
+                            </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="components">
+                <div class="connection">
+                    Click the button below to find your Sugar momma or Blesser!!!!
+                </div>
+                <div class="connection">
+                    <button>Get a Sugar Momma</button>
+                </div>
+
+            </div>
+        </div>
+       <div class="footer">
+            <a href="./home.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/house_17612418.png" alt="home" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    Home
+                </div>
+
+
+            </a>
+            
+            <a href="../videos.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/profile_12591811.png" alt="home" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    Videos
+                </div>
+
+
+            </a>
+            <a href="./connection.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/search_1511084.png" alt="get a sugar momma" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    GetONe
+                </div>
+
+
+            </a>
+            <a href="./account.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/user-3296.png" alt="account" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    Account
+                </div>
+
+
+            </a>
+            
+
+        </div>
+
+    </div>
+    <script src="../scripts/comment.js"></script>
+    <script src="../scripts/data.js"></script>
+
+</body>
+</html>

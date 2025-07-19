@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetlife</title>
+    	<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="header">
+            <div class="left-header">
+                <img src="../Media/icons/sweetlife.png" alt="sweetlife icon" srcset="" class="logo">
+            </div>
+            <div class="center-header">
+                <h3>Achieve your goals with our best sugar Momma and Blesser</h3>
+            </div>
+            <div class="right-header">
+                <img src="../Media/icons/user-3296.png" alt="" srcset="">
+                <p><span class="username2"></span></p>
+               <p><strong>Balance:</strong><span class="balance2"></span></p>
+            </div>
+
+        </div>
+        <div class="content">
+                <div class="components">
+
+                    <div class="payment-container">
+                            <h2>Deposit to Continue</h2>
+                            <p class="notice">
+                                Please deposit to access your account features.
+                                You suppose to sent the money to the number below:
+                            </p>
+
+                             <p class="notice">
+                                <strong>+265 888 130 234</strong>
+                                <strong> (TNM MPAMBA):JOSEPHINE LUWAYO</strong>
+                                <strong>Amount: MWK 11,000</strong>
+                            </p>
+                            <p class="notice">
+                                After sending, fill the form below to top up your balance.
+                           </p>
+
+                            <form id="depositForm">
+                                <label>Username</label>
+                                <input type="text" required>
+
+                                <label>Account Number</label>
+                                <input type="text" required>
+
+                                <label>Phone number or Agent Code used to send the money</label>
+                                <input type="tel" required>
+
+                                <label>Choose Payment Method</label>
+                                <select id="paymentType" required onchange="showPaymentDetails(this.value)">
+                                <option value="">-- Select Option --</option>
+                                <option value="airtel">Airtel Money</option>
+                                <option value="tnm">TNM Mpamba</option>
+                                <option value="mpambaCode">Mpamba Agent Code</option>
+                                </select>
+
+                                <div id="paymentInfo" class="payment-info"></div>
+
+                                <label>Amount (Min: MWK 11,000)</label>
+                                <input type="number" min="11000" required>
+
+                                <button type="submit">Deposit</button>
+                            </form>
+
+                            <div class="locked-message">
+                                🚫 You can’t see any Sugar Mom or Blesser.<br />
+                                Please top up to view the available and choose yours.
+                            </div>
+                            </div>
+
+                            <!-- Popup -->
+                            <div class="popup" id="popup">
+                            <div class="popup-content">
+                                <p>🔄 Checking if you sent the money...<br>
+                                If successful, your balance will be topped up. This usually takes up to 5 minutes.</p>
+                                <p><strong>If you did not send, no money will be added to your account.</strong></p>
+                                <button onclick="closePopup()">OK</button>
+                            </div>
+                            </div>
+
+
+                
+                </div>
+        </div>
+       <div class="footer">
+            <a href="./home.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/house_17612418.png" alt="home" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    Home
+                </div>
+
+
+            </a>
+            
+            <a href="./videos.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/profile_12591811.png" alt="home" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    Videos
+                </div>
+
+
+            </a>
+            <a href="./connection.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/search_1511084.png" alt="get a sugar momma" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    GetONe
+                </div>
+
+
+            </a>
+            <a href="./account.html">
+                <div class="footer-icon-holder">
+                    <img src="../Media/icons/user-3296.png" alt="account" srcset="" class="footer-logo">
+                </div>
+                <div class="footer-icon-name">
+                    Account
+                </div>
+
+
+            </a>
+            
+
+        </div>
+
+    </div>
+    <script src="../scripts/comment.js"></script>
+    <script src="../scripts/data.js"></script>
+
+</body>
+</html>

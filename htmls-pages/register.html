@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SweetLife</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/register.css">
+    <meta name="robots" content="noindex, follow">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <form id="registerForm">
+          <p id="error" style="color: red; display: none;"></p>
+          <p id="success" style="color: green; display: none;"></p>
+          <h3>Create an Account</h3>
+
+          <div class="form-group">
+            <div class="form-wrapper">
+              <label for="">First Name</label>
+              <input type="text" id="firstName" class="form-control">
+            </div>
+            <div class="form-wrapper">
+              <label for="">Last Name</label>
+              <input type="text" id="lastName" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="">User Name</label>
+            <input type="text" id="username" class="form-control">
+          </div>
+
+          <div class="form-wrapper">
+            <label for="">Phone Number</label>
+            <input type="text" id="phone" class="form-control" placeholder="+265999999999">
+          </div>
+
+          <div class="form-wrapper">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" class="form-select" required>
+              <option value="">-- Select Gender --</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="district">District (Malawi):</label>
+            <select id="district" name="district" class="form-select" required>
+              <option value="">-- Select District --</option>
+              <option value="Balaka">Balaka</option>
+              <option value="Blantyre">Blantyre</option>
+              <option value="Chikwawa">Chikwawa</option>
+              <option value="Chiradzulu">Chiradzulu</option>
+              <option value="Chitipa">Chitipa</option>
+              <option value="Dedza">Dedza</option>
+              <option value="Dowa">Dowa</option>
+              <option value="Karonga">Karonga</option>
+              <option value="Kasungu">Kasungu</option>
+              <option value="Likoma">Likoma</option>
+              <option value="Lilongwe">Lilongwe</option>
+              <option value="Machinga">Machinga</option>
+              <option value="Mangochi">Mangochi</option>
+              <option value="Mchinji">Mchinji</option>
+              <option value="Mulanje">Mulanje</option>
+              <option value="Mwanza">Mwanza</option>
+              <option value="Mzimba">Mzimba</option>
+              <option value="Neno">Neno</option>
+              <option value="Nkhata Bay">Nkhata Bay</option>
+              <option value="Nkhotakota">Nkhotakota</option>
+              <option value="Nsanje">Nsanje</option>
+              <option value="Ntcheu">Ntcheu</option>
+              <option value="Ntchisi">Ntchisi</option>
+              <option value="Phalombe">Phalombe</option>
+              <option value="Rumphi">Rumphi</option>
+              <option value="Salima">Salima</option>
+              <option value="Thyolo">Thyolo</option>
+              <option value="Zomba">Zomba</option>
+            </select>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="">Password</label>
+            <input type="password" id="password" class="form-control">
+          </div>
+
+          <div class="form-wrapper">
+            <label for="">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="form-control">
+          </div>
+
+          <div class="checkbox">
+            <label>
+              Already have an account? <a href="login.html">Log In</a>
+            </label>
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../scripts/register.js"></script>
+  </body>
+</html>
